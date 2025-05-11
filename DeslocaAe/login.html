@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f365f; 
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .topo-logo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+    }
+
+    .container {
+      background: #ffffff; 
+      padding: 30px;
+      border-radius: 10px;
+      width: 320px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      color: #000;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #0f365f;
+      border: none;
+      padding: 10px;
+      color: #ffffff;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .link-botao {
+      background: none;
+      color: #000000;
+      text-decoration: underline;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+    }
+
+    a {
+      color: #0f365f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .oculto {
+      display: none;
+    }
+
+    .mensagem {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #0f365f;
+    }
+  </style>
+</head>
+<body>
+  <div class="topo-logo">
+    <img src="logodeslocaaebranca.png" alt="Logo do site" class="logo" />
+  </div>
+
+  <div class="container">
+    <div id="form-login" class="form">
+      <h2>Login</h2>
+      <input type="text" id="login-identificador" placeholder="E-mail ou Telefone" />
+      <input type="password" id="login-senha" placeholder="Senha" />
+      <button onclick="login()">Entrar</button>
+      <p>Ainda não tem conta? <a href="#" onclick="mostrarCriarConta()">Cadastre-se</a></p>
+      <p id="mensagem-login" class="mensagem"></p>
+    </div>
+
+    <div id="form-criar" class="form oculto">
+      <h2>Criar Conta</h2>
+      <input type="text" id="criar-nome" placeholder="Nome completo" />
+      <input type="email" id="criar-email" placeholder="E-mail" />
+      <input type="tel" id="criar-telefone" placeholder="Telefone" />
+      <input type="password" id="criar-senha" placeholder="Senha" />
+      <input type="password" id="criar-confirmar" placeholder="Repita a senha" />
+      <button onclick="criarConta()">Criar</button>
+      <p>Já tem conta? <a href="#" onclick="mostrarLogin()">Voltar ao login</a></p>
+      <p id="mensagem-criar" class="mensagem"></p>
+    </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
