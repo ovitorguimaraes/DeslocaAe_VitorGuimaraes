@@ -1,0 +1,22 @@
+{
+  "usuarios": [
+    {
+      "id": "910e",
+      "nome": "Vitor de Oliveira Guimarães",
+      "email": "vt@vt.com",
+      "telefone": "3333",
+      "senha": "123"
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": "c2da",
+      "nome": "VITOR DE OLIVEIRA GUIMARÃES",
+      "email": "ovitordeoliveiraguimaraes@gmail.com",
+      "comentario": "wdsad",
+      "bairro": "adsad",
+      "nota": 5,
+      "data": "15/06/2025, 16:09:07"
+    }
+  ]
+}
